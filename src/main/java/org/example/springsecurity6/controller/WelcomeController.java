@@ -16,6 +16,6 @@ public class WelcomeController {
 
     @GetMapping("/csrf")
     public CsrfToken getToken(HttpServletRequest request){
-       return (CsrfToken) request.getAttribute("_csrf");
+        return (CsrfToken) request.getAttribute("_csrf");
     }
 }
